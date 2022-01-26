@@ -1,0 +1,91 @@
+$font-size: 32;
+
+body{
+
+  background-color: black;
+}
+
+.main{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  padding: 10px;
+
+}
+
+h1{
+
+  color: white;
+  font-size: 72px;
+}
+
+#hero-container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+
+  h1{
+padding: 20px;
+border-right: 1px solid white;
+
+  }
+
+  li{
+
+color: white;
+list-style-type: none; /* Remove bullets */
+padding: 5px; /* Remove padding */
+margin: 0; /* Remove margins */
+font-size: $font-size + px;
+  }
+
+  li:hover{
+
+box-shadow: 5px 5px blueviolet;  
+transition: 0.2s;
+cursor: pointer;
+
+  }
+
+}
+
+.last-name{
+
+color: blueviolet;
+
+background: linear-gradient(-45deg, blueviolet, rgb(78, 18, 135), blueviolet);
+background-size: 400% 400%;
+animation: gradient 10s ease infinite;
+
+  // background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+#nav-container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+
+}
